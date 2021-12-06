@@ -1,0 +1,34 @@
+﻿<h2>Movie Entry Form</h2>
+<!--when submit is clicked on our form, it will go to the controller and try to find and call an action
+    named Result-->
+<form action="Result">
+    <p>Movie ID</p>
+    <input type="number" name="MovieID" />
+
+    <p>Title</p>
+    <input type="text" name="Title" maxlength="50" />
+
+    <p>Genre</p>
+    <select name="Genre" id="genres">
+        <option value="Action">Action</option>
+        <option value="Animation">Animation</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama">Drama</option>
+        <option value="Horror">Horror</option>
+        <option value="Romance">Romance</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Thriller">Thriller</option>
+    </select>
+
+    <p>Year</p>
+    <input type="number" name="Year" min="1880" max="2022" />
+
+    <p>Actor</p>
+    <input type="text" name="Actor" />
+
+    <p>Director</p>
+    <input type="text" name="Director" />
+
+    <button type="submit">Submit</button>
+
+</form>
